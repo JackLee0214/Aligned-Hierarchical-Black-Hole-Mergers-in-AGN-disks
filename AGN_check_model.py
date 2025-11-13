@@ -306,14 +306,14 @@ def Double_nonpara_priors(conversion_function=reduced_Double_constraint_GWTC4):
     priors.update(dict(
                     beta = Uniform(0,6,'beta','$\\beta$'),
                     delta1 =Uniform(1,10),
-                    mmin1 = Uniform(2., 50., 'mmin1', '$m_{\\rm min,1}$'),
+                    mmin1 = Uniform(3., 50., 'mmin1', '$m_{\\rm min,1}$'),
                     mmax1 = Uniform(20., 200, 'mmax1', '$m_{\\rm max,1}$'),
                     alpha1 = Uniform(-4, 8., 'alpha1', '$\\alpha,1$'),
                     amin1 = 0,
                     amax1 = Uniform(0.2,1,'amax1', '$a_{\\rm max,1}$'),
                     
                     delta2 = Uniform(1,20),
-                    mmin2 = Uniform(2., 50., 'mmin2', '$m_{\\rm min,2}$'),
+                    mmin2 = Uniform(3., 50., 'mmin2', '$m_{\\rm min,2}$'),
                     mmax2 = Uniform(20., 200, 'mmax2', '$m_{\\rm max,2}$'),
                     alpha2 = Uniform(-4., 8., 'alpha2', '$\\alpha_2$'),
                     amin2 = Uniform(0,0.8, 'amin2', '$a_{\\rm min,2}$'),
@@ -346,12 +346,12 @@ def Double_para_ct_priors(conversion_function=reduced_Double_constraint_GWTC4):
                     beta = Uniform(0,6,'beta','$\\beta$'),
 
                     delta1 =Uniform(1,10),
-                    mmin1 = Uniform(2., 50., 'mmin1', '$m_{\\rm min,1}$'),
+                    mmin1 = Uniform(3., 50., 'mmin1', '$m_{\\rm min,1}$'),
                     mmax1 = Uniform(20., 200, 'mmax1', '$m_{\\rm max,1}$'),
                     alpha1 = Uniform(-4, 8., 'alpha1', '$\\alpha,1$'),
                     
                     delta2 = Uniform(1,20),
-                    mmin2 = Uniform(2., 50., 'mmin2', '$m_{\\rm min,2}$'),
+                    mmin2 = Uniform(3., 50., 'mmin2', '$m_{\\rm min,2}$'),
                     mmax2 = Uniform(20., 200, 'mmax2', '$m_{\\rm max,2}$'),
                     alpha2 = Uniform(-4., 8., 'alpha2', '$\\alpha_2$'),
                     r2 = Uniform(0,1, 'r2', '$r_2$'),
